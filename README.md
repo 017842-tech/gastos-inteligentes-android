@@ -30,3 +30,6 @@ This project was developed as part of an academic trimester. It demonstrates mob
 
 ## Status
 Completed (Academic Project)
+
+## Author
+Developed by Oziel Alejandro Rodríguez Ruiz
