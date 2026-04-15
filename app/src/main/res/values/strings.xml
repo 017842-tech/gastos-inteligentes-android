@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gastos Inteligentes</string>
+    <string name="default_web_client_id">771650933730-bk3740aq45ufqlqjqjnh90sbgm9lhbrt.apps.googleusercontent.com</string>
+    <string name="title_activity_financial_setup">FinancialSetupActivity</string>
+
+    <string name="ai_analysis_title">🔍 Análisis de Patrones de IA</string>
+    <string name="ai_analysis_message">He detectado que has gastado %1$s en \'%2$s\'. Esto representa una gran parte de tus ingresos. ¿Te gustaría revisar tus gastos en esta categoría?</string>
+    <string name="review_history">Revisar Historial</string>
+    <string name="understood">Entendido</string>
+
+    <string name="alert_min_title">⚠️ Alerta de Límite Mínimo</string>
+    <string name="alert_min_message">Tu saldo ha alcanzado tu límite mínimo configurado (%1$s). IA sugiere: Tu saldo actual es %2$s. Evita gastos adicionales.</string>
+    <string name="alert_max_title">✅ IA: Objetivo Alcanzado</string>
+    <string name="alert_max_message">¡Felicidades! Has superado tu límite de ahorro de %1$s. Tu saldo actual es %2$s. IA sugiere: Considera invertir el excedente.</string>
+</resources>

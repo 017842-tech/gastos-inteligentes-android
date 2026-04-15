@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_app_logo"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Logo de Gastos Inteligentes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gastos Inteligentes"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toma el control de tu dinero de forma sencilla"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Botón de Registro (Google) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegisterGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Registrarse con Google"
+        app:cornerRadius="16dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:elevation="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón de Inicio de Sesión (Google) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignInGoogle"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes cuenta? Inicia sesión aquí"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón de Política de Privacidad y Eliminación -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPrivacyPolicy"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Política de Privacidad y Gestión de Datos"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textColor="#757575" />
+
+</LinearLayout>

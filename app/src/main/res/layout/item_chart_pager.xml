@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pagerPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:padding="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/pagerLineChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:padding="8dp" />
+
+        <!-- AI Deep Analysis View (3rd Slide) -->
+        <ScrollView
+            android:id="@+id/scrollAIAnalysis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:padding="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_ai_assistant"
+                    app:tint="@color/purple_700"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Análisis Profundo IA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/tvAIDeepAnalysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cargando análisis..."
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <!-- Bottom AI Suggestion Area (Visible in slide 1 and 2) -->
+    <LinearLayout
+        android:id="@+id/layoutAISuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="#F3E5F5">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_ai_assistant"
+            app:tint="@color/purple_700"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvChartAISuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analizando tus finanzas..."
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:textColor="@color/purple_700" />
+    </LinearLayout>
+
+</LinearLayout>
