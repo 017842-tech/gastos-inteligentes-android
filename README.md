@@ -2,20 +2,28 @@
 
 Android application developed in Kotlin for personal finance management.
 
-## Features
-- Expense tracking
-- Debt management
-- Financial overview
-- Firebase integration
-
-## Tech Stack
-- Kotlin
-- Firebase
-- Android Studio
-- Gradle
-
 ## Description
+
 This project was developed as part of an academic trimester. It demonstrates mobile development concepts, database integration, and UI design.
+
+## Features
+Firebase Authentication
+Expense tracking system
+Debt management
+Financial overview dashboard
+Real-time sync with web application
+User-friendly mobile UI
+Tech Stack
+Kotlin
+Android Studio
+Firebase (Auth, Firestore)
+Gradle
+
+## Architecture
+Android App ↔ Firebase Authentication
+Android App ↔ Firestore Database
+Shared backend with Web application
+Real-time updates across platforms
 
 ## Screenshots
 <img width="1080" height="2408" alt="DashBoard" src="https://github.com/user-attachments/assets/a14c2b3e-334b-4b48-89e9-9cab7bda99a4" />
@@ -28,8 +36,28 @@ This project was developed as part of an academic trimester. It demonstrates mob
 ## Demo Video
 [Download / Watch Demo](./Gastos_Android_Demo.mp4)
 
+## Setup Instructions
+Clone the repository
+Open in Android Studio
+Add your Firebase config (google-services.json)
+Build and run the app
+
+##  Security
+Authentication required for user access
+Firestore rules enforce data isolation
+Sensitive files excluded via .gitignore
+
 ## Status
-Completed (Academic Project)
+
+✅ Completed (Academic Project)
+
+## Future Improvements
+Push notifications
+Advanced analytics
+UI/UX enhancements
+
+## Web Version
+https://proyecto-integrado-467c0.web.app/dashboard.html
 
 ## Author
 Developed by Oziel Alejandro Rodríguez Ruiz
